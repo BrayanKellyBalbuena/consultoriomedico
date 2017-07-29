@@ -20,7 +20,10 @@ public class Main {
         p.setNombre("Jose");
         p.setApellido("Kaz");
 
-
+        PacienteRepository prepo =(PacienteRepository) ApplicationContext.getReposiory(RepositoryEnum.PACIENTE_REPOSITORY);
+        prepo.crear(p);
+        p.setNombre("mario");
+        prepo.modificar(p);
         Cita c = new Cita();
         c.setDescripcion("Cita 1");
         c.setHorario(LocalDateTime.now());
