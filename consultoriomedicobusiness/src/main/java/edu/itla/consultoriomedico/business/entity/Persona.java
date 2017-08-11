@@ -8,7 +8,6 @@ public abstract class Persona {
     protected int telefono;
     protected Date fechaNacimiento;
     protected String direccion;
-    protected char sexo;
 
     public String getNombre() {
         return nombre;
@@ -48,13 +47,5 @@ public abstract class Persona {
 
     public void setDireccion(String direccion) {
         direccion = direccion;
-    }
-
-    public char getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(char sexo) {
-        this.sexo = sexo;
     }
 }

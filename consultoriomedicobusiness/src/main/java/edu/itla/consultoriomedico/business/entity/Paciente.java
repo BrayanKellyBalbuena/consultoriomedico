@@ -1,13 +1,17 @@
 package edu.itla.consultoriomedico.business.entity;
 
 public class Paciente extends Persona{
-    private int Cedula;
+    private int id;
 
-    public int getCedula() {
-        return Cedula;
+    public Paciente() {
+        super();
     }
 
-    public void setCedula(int cedula) {
-        Cedula = cedula;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

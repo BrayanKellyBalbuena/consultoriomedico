@@ -1,6 +1,5 @@
 package edu.itla.consultoriomedico.gui;
 import edu.itla.consultoriomedico.business.entity.Cita;
-import edu.itla.consultoriomedico.business.entity.Medico;
 import edu.itla.consultoriomedico.business.entity.Paciente;
 import edu.itla.consultoriomedico.business.entity.Reservacion;
 import edu.itla.consultoriomedico.business.enums.RepositoryEnum;
@@ -16,11 +15,12 @@ public class Main {
     public static void main(String[] args){
 
         Paciente p = new Paciente();
-        p.setCedula(12);
+        p.setId(12);
         p.setNombre("Jose");
         p.setApellido("Kaz");
 
         PacienteRepository prepo =(PacienteRepository) ApplicationContext.getReposiory(RepositoryEnum.PACIENTE_REPOSITORY);
+        System.out.print(p.getNombre());
         prepo.crear(p);
         p.setNombre("mario");
         prepo.modificar(p);
@@ -45,8 +45,8 @@ public class Main {
 
         reservacionlist.findAll()
                 .stream()
-                .filter(r -> r.getPaciente().getCedula() == 12)
-                .forEach(x -> System.out.print(x.getPaciente().getCedula() + "-" + x.getCita()));
+                .filter(r -> r.getPaciente().getId() == 12)
+                .forEach(x -> System.out.print(x.getPaciente().getId() + "-" + x.getCita()));
 
     }
 

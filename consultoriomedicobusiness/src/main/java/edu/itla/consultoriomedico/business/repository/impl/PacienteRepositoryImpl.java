@@ -22,7 +22,7 @@ public class PacienteRepositoryImpl implements PacienteRepository {
     }
 
     @Override
-    public Paciente findById(Integer id) {
+    public Paciente findById(Long id) {
         return pacienteList.get(id.intValue());
     }
 

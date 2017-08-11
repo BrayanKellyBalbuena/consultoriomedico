@@ -4,11 +4,21 @@ import java.time.LocalDateTime;
 
 public class Cita {
 
-    private Long Codigo;
+    private Long CitaId;
    private Paciente paciente;
    private Medico medico;
+   private ProcedimientoMedico procedimientoMedico;
    private LocalDateTime horario;
    private String descripcion;
+
+
+    public Long getCitaId() {
+        return CitaId;
+    }
+
+    public void setCitaId(Long citaId) {
+        CitaId = citaId;
+    }
 
     public Paciente getPaciente() {
         return paciente;
@@ -44,6 +54,14 @@ public class Cita {
 
     @Override
     public String toString() {
-        return "["+ this.getDescripcion()+" "+ this.horario.toString()+"]";
+        return "["+ this.getDescripcion()+" "+ this.getHorario().toString()+"]";
+    }
+
+    public ProcedimientoMedico getProcedimientoMedico() {
+        return procedimientoMedico;
+    }
+
+    public void setProcedimientoMedico(ProcedimientoMedico procedimientoMedico) {
+        this.procedimientoMedico = procedimientoMedico;
     }
 }

@@ -3,22 +3,20 @@ package edu.itla.consultoriomedico.business.entity;
 import java.util.List;
 
 public class Medico extends Persona{
-    private Long id;
-    private List<EspecialidadMedica> especialidades;
 
-    public Long getId() {
-        return id;
+    public  Medico() {
+        super();
+    }
+
+    private Long codigo;
+
+    public Long getCodigo() {
+        return codigo;
     }
 
     public void setCodigo(Long codigo) {
-        id = codigo;
+        this.codigo = codigo;
     }
 
-    public List<EspecialidadMedica> getEspecialidades() {
-        return especialidades;
-    }
 
-    public void setEspecialidades(List<EspecialidadMedica> especialidades) {
-        this.especialidades = especialidades;
-    }
 }

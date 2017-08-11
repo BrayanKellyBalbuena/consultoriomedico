@@ -8,7 +8,7 @@ import java.util.List;
 
 public class CitaRepositoryImpl implements CitaRepository {
 
-    private List<Cita> citaList=new ArrayList<>();
+    private List<Cita> citaList = new ArrayList<>();
 
     @Override
     public void crear(Cita entity) {

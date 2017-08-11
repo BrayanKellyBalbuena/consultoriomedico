@@ -18,6 +18,7 @@ public class ApplicationContext {
                 return new PacienteRepositoryImpl();
             case RESERVACION_REPOSITORY:
                 return new ReservacionRepositoryImpl();
+            case PROCEDIMIENTO_REPOSITORY:
         }
 
         return null;
