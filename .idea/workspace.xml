@@ -16,14 +16,14 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="FXMLMedicoView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLMedicoView.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="48" />
+            <state relative-caret-position="0">
+              <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="48" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -31,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/MedicoController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+              <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainLayoutController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/MainLayoutController.java">
+      <file leaf-file-name="PacienteController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="53" column="88" lean-forward="false" selection-start-line="53" selection-start-column="88" selection-end-line="53" selection-end-column="88" />
+            <state relative-caret-position="125">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,59 +51,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FXMLCitaView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLCitaView.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
+      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
-                <marker date="1502418386891" expanded="true" signature="5405:5454" ph="..." />
-                <marker date="1502418386891" expanded="true" signature="5405:5467" ph="..." />
-                <marker date="1502418386891" expanded="true" signature="5405:5488" ph="..." />
-                <marker date="1502418386891" expanded="true" signature="5405:5509" ph="..." />
-                <marker date="1502418386891" expanded="true" signature="5405:5525" ph="..." />
-                <marker date="1502418386891" expanded="true" signature="5405:5539" ph="..." />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FXMLPacienteView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteView.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="75" column="14" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="75" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcedimientoMedico.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/ProcedimientoMedico.java">
+      <file leaf-file-name="FXMLMainLayout.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLMainLayout.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="21" />
+              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FXMLProcedimientoMedico.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLProcedimientoMedico.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-298">
-              <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -154,7 +123,6 @@
         <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLRegistro.fxml" />
         <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/MainLayout.fxml" />
         <option value="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Paciente.java" />
-        <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java" />
         <option value="C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class" />
         <option value="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Medico.java" />
         <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/CitaController.java" />
@@ -169,6 +137,7 @@
         <option value="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Cita.java" />
         <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLCitaView.fxml" />
         <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/MainLayoutController.java" />
+        <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java" />
       </list>
     </option>
   </component>
@@ -197,8 +166,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="471" />
-    <option name="y" value="82" />
+    <option name="x" value="-22" />
+    <option name="y" value="-23" />
     <option name="width" value="1260" />
     <option name="height" value="1027" />
   </component>
@@ -217,6 +186,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -295,6 +266,33 @@
               <item name="consultoriomedicogui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultoriomedico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultoriomedico" type="462c0819:PsiDirectoryNode" />
+              <item name="consultoriomedicogui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultoriomedico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultoriomedico" type="462c0819:PsiDirectoryNode" />
+              <item name="consultoriomedicogui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultoriomedico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultoriomedico" type="462c0819:PsiDirectoryNode" />
+              <item name="consultoriomedicogui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -310,8 +308,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -492,11 +488,12 @@
       <workItem from="1502326140605" duration="445000" />
       <workItem from="1502326591758" duration="6883000" />
       <workItem from="1502411731134" duration="6807000" />
+      <workItem from="1502507542241" duration="3288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30587000" />
+    <option name="totallyTimeSpent" value="33875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -718,9 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="16" column="56" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -735,9 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,71 +765,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="461" column="0" lean-forward="false" selection-start-line="461" selection-start-column="0" selection-end-line="461" selection-end-column="0" />
-          <folding>
-            <element signature="e#15807#15808#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLMainLayout.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="32" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="46" column="32" lean-forward="false" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLMedicoView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="48" />
+        <state relative-caret-position="0">
+          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="48" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/MedicoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/ProcedimientoMedicoController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,19 +790,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLProcedimientoMedico.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-298">
+        <state relative-caret-position="187">
           <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/ProcedimientoMedico.java">
@@ -871,46 +813,85 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="75" column="14" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="75" selection-end-column="14" />
+          <folding>
+            <marker date="1502509211550" expanded="true" signature="3899:3935" ph="..." />
+            <marker date="1502509211550" expanded="true" signature="4051:4207" ph="..." />
+            <marker date="1502509211550" expanded="true" signature="4079:4180" ph="..." />
+            <marker date="1502509211550" expanded="true" signature="4375:4784" ph="..." />
+            <marker date="1502509211550" expanded="true" signature="4407:4758" ph="..." />
+          </folding>
+        </state>
+      </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="75" column="14" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="75" selection-end-column="14" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLCitaView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
             <marker date="1502418386891" expanded="true" signature="5405:5454" ph="..." />
-            <marker date="1502418386891" expanded="true" signature="5405:5467" ph="..." />
-            <marker date="1502418386891" expanded="true" signature="5405:5488" ph="..." />
-            <marker date="1502418386891" expanded="true" signature="5405:5509" ph="..." />
-            <marker date="1502418386891" expanded="true" signature="5405:5525" ph="..." />
-            <marker date="1502418386891" expanded="true" signature="5405:5539" ph="..." />
           </folding>
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Cita.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLMainLayout.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/MainLayoutController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="53" column="88" lean-forward="false" selection-start-line="53" selection-start-column="88" selection-end-line="53" selection-end-column="88" />
+        <state relative-caret-position="170">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/MedicoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
