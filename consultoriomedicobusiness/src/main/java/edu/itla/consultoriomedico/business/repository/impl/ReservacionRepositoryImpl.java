@@ -11,12 +11,12 @@ public class ReservacionRepositoryImpl implements ReservacionRepository {
     private List<Reservacion> medicoList=new ArrayList<>();
 
     @Override
-    public void crear(Reservacion entity) {
+    public void save(Reservacion entity) {
         medicoList.add(entity);
     }
 
     @Override
-    public void modificar(Reservacion entity) {
+    public void update(Reservacion entity) {
         int index=medicoList.indexOf(entity);
         medicoList.set(index,entity);
     }

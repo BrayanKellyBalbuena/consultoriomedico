@@ -11,12 +11,12 @@ public class ProcedimientoMedicoRepositoryImpl implements ProcedimientoMedicoRep
     List<ProcedimientoMedico> listProcedimiento = new ArrayList<>();
 
     @Override
-    public void crear(ProcedimientoMedico entity) {
+    public void save(ProcedimientoMedico entity) {
         listProcedimiento.add(entity);
     }
 
     @Override
-    public void modificar(ProcedimientoMedico entity) {
+    public void update(ProcedimientoMedico entity) {
         int index = listProcedimiento.indexOf(entity);
         if(index != -1) {
             listProcedimiento.set(index, entity);

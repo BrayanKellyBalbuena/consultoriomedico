@@ -12,12 +12,12 @@ public class MedicoRepositoryImpl implements MedicoRepository {
         private List<Medico> medicoList=new ArrayList<>();
 
         @Override
-        public void crear(Medico entity) {
+        public void save(Medico entity) {
             medicoList.add(entity);
         }
 
         @Override
-        public void modificar(Medico entity) {
+        public void update(Medico entity) {
             int index=medicoList.indexOf(entity);
             medicoList.set(index,entity);
         }

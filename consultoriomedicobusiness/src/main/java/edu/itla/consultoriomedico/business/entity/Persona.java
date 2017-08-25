@@ -1,20 +1,26 @@
 package edu.itla.consultoriomedico.business.entity;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public abstract class Persona {
+    protected Long id;
     protected String nombre;
     protected String apellido;
+    protected String correo;
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
     protected int telefono;
-    protected Date fechaNacimiento;
-    protected String direccion;
 
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
-        nombre = nombre;
+        this.nombre = nombre;
     }
 
     public String getApellido() {
@@ -22,30 +28,36 @@ public abstract class Persona {
     }
 
     public void setApellido(String apellido) {
-        apellido = apellido;
+        this.apellido = apellido;
     }
 
-    public int getTelefono() {
-        return telefono;
+    public Long getId() {
+        return id;
     }
 
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public Date getFechaNacimiento() {
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
-        fechaNacimiento = fechaNacimiento;
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
     }
 
-    public String getDireccion() {
-        return direccion;
-    }
+    protected LocalDate fechaNacimiento;
 
-    public void setDireccion(String direccion) {
-        direccion = direccion;
+    public int getTelefono() {
+        return telefono;
     }
 }

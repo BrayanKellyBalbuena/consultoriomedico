@@ -1,17 +1,13 @@
 package edu.itla.consultoriomedico.business.entity;
 
 public class Paciente extends Persona{
-    private int id;
-
-    public Paciente() {
-        super();
+    public Long getCodigo() {
+        return codigo;
     }
 
-    public int getId() {
-        return id;
+    public void setCodigo(Long codigo) {
+        this.codigo = codigo;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    private Long codigo;
 }

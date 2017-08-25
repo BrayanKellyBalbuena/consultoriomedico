@@ -12,8 +12,9 @@ import java.util.List;
  * @author bkelly
  */
 public interface GenericRepository<T, ID> {
-    void crear(T entity);
-    void modificar(T entity);
+    void save(T entity);
+
+    void update(T entity);
     T findById(ID id);
     List<T> findAll();
 }

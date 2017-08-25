@@ -10,12 +10,12 @@ public class EspecialidadRepositoryImpl implements EspecialidadRepository {
     private List<EspecialidadMedica> especialidadMedicaList =new ArrayList<>();
 
     @Override
-    public void crear(EspecialidadMedica entity) {
+    public void save(EspecialidadMedica entity) {
         especialidadMedicaList.add(entity);
     }
 
     @Override
-    public void modificar(EspecialidadMedica entity) {
+    public void update(EspecialidadMedica entity) {
         int index= especialidadMedicaList.indexOf(entity);
         especialidadMedicaList.set(index,entity);
     }

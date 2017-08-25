@@ -14,7 +14,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        Paciente p = new Paciente();
+       /* Paciente p = new Paciente();
         p.setId(12);
         p.setNombre("Jose");
         p.setApellido("Kaz");
@@ -46,7 +46,7 @@ public class Main {
         reservacionlist.findAll()
                 .stream()
                 .filter(r -> r.getPaciente().getId() == 12)
-                .forEach(x -> System.out.print(x.getPaciente().getId() + "-" + x.getCita()));
+                .forEach(x -> System.out.print(x.getPaciente().getId() + "-" + x.getCita()));*/
 
     }
 

@@ -11,12 +11,12 @@ public class CitaRepositoryImpl implements CitaRepository {
     private List<Cita> citaList = new ArrayList<>();
 
     @Override
-    public void crear(Cita entity) {
+    public void save(Cita entity) {
         citaList.add(entity);
     }
 
     @Override
-    public void modificar(Cita entity) {
+    public void update(Cita entity) {
         int index=citaList.indexOf(entity);
         citaList.set(index,entity);
     }

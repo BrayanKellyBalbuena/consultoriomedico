@@ -8,7 +8,7 @@ import edu.itla.consultoriomedico.business.repository.impl.PacienteRepositoryImp
 import edu.itla.consultoriomedico.business.repository.impl.ReservacionRepositoryImpl;
 
 public class ApplicationContext {
-    public static GenericRepository getReposiory(RepositoryEnum repositoryEnum) {
+    public static GenericRepository getRepository(RepositoryEnum repositoryEnum) {
         switch(repositoryEnum) {
             case CITA_REPOSITORY:
                 return new CitaRepositoryImpl();

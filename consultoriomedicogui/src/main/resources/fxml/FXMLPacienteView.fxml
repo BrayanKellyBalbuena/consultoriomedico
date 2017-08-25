@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
@@ -16,18 +17,23 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.itla.consultoriomedico.gui.controllers.PacienteController">
    <children>
-      <SplitPane dividerPositions="0.29797979797979796" layoutX="45.0" layoutY="55.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+       <SplitPane dividerPositions="0.29797979797979796" layoutX="45.0" layoutY="45.0" prefHeight="355.0"
+                  prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <TableView layoutX="-25.0" prefHeight="398.0" prefWidth="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                   <TableView fx:id="tblPacientes" layoutX="-25.0" layoutY="57.0" prefHeight="341.0" prefWidth="175.0"
+                              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                              AnchorPane.topAnchor="0.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="ID" />
-                      <TableColumn prefWidth="87.0" text="Nombre" />
-                        <TableColumn prefWidth="92.0" text="Apellido" />
-                        <TableColumn prefWidth="75.0" text="Telefono" />
-                        <TableColumn prefWidth="75.0" text="Fecha de Nacimiento" />
-                        <TableColumn prefWidth="75.0" text="Direccion" />
+                        <TableColumn prefWidth="75.0" text="Imagen"/>
+                        <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID"/>
+                        <TableColumn fx:id="nombreColumn" prefWidth="87.0" text="Nombre"/>
+                        <TableColumn fx:id="apellidoColumn" prefWidth="92.0" text="Apellido"/>
+                        <TableColumn fx:id="telefonoColumn" prefWidth="75.0" text="Telefono"/>
+                        <TableColumn fx:id="fechaColumn" prefWidth="75.0" text="Fecha de Nacimiento"/>
+                        <TableColumn fx:id="direccionColumn" prefWidth="75.0" text="Direccion"/>
                     </columns>
                   </TableView>
                </children>
@@ -55,6 +61,10 @@
                         <Label text="Dirección" GridPane.rowIndex="5" />
                         <ImageView fx:id="imgPaciente" fitHeight="96.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
                         <JFXButton onAction="#loadImage" text="Subir Imagen" />
+                         <JFXTextField fx:id="txtId" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                         <JFXTextField fx:id="txtNombre" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                         <JFXTextField fx:id="txtApellido" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                         <JFXTextField fx:id="txtTelefono" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
                      </children>
                   </GridPane>
                   <Label layoutX="14.0" layoutY="14.0" text="Mantenimiento Paciente">
@@ -62,16 +72,24 @@
                         <Font name="FontAwesome Regular" size="20.0" />
                      </font>
                   </Label>
-                  <HBox layoutX="195.0" layoutY="347.0" prefHeight="39.0" prefWidth="218.0" spacing="2.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="195.0">
+                   <HBox layoutX="195.0" layoutY="312.0" prefHeight="39.0" prefWidth="218.0" spacing="2.0"
+                         AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="195.0">
                      <children>
-                        <JFXButton buttonType="RAISED" prefWidth="75.0" text="Nuevo..." />
-                        <JFXButton buttonType="RAISED" prefHeight="25.0" prefWidth="92.0" text="Actualizar..." />
-                        <JFXButton buttonType="RAISED" prefHeight="25.0" prefWidth="79.0" text="Eliiminar..." />
+                         <JFXButton fx:id="btnNuevo" buttonType="RAISED" onAction="#nuevo" prefWidth="75.0"
+                                    text="Nuevo..."/>
+                         <JFXButton fx:id="btnActualizar" buttonType="RAISED" prefHeight="25.0" prefWidth="92.0"
+                                    text="Actualizar..."/>
+                         <JFXButton fx:id="btnEliminar" buttonType="RAISED" prefHeight="25.0" prefWidth="79.0"
+                                    text="Eliiminar..."/>
                      </children>
                   </HBox>
                   <FontAwesomeIconView fill="#1b3eae" fontSmoothingType="LCD" glyphName="USERS" layoutX="243.0" layoutY="41.0" size="40.0" />
                </children></AnchorPane>
         </items>
       </SplitPane>
+       <JFXTextField fx:id="txtSearch" layoutX="14.0" layoutY="8.0" prefHeight="25.0" prefWidth="218.0"
+                     promptText="Digite el ID"/>
+       <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="248.0" layoutY="7.0" onAction="#search"
+                  prefHeight="25.0" prefWidth="119.0" text="Buscar"/>
    </children>
 </AnchorPane>
