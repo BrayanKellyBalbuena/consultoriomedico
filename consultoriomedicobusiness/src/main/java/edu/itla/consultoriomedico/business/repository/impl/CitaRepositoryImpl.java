@@ -16,6 +16,11 @@ public class CitaRepositoryImpl implements CitaRepository {
     }
 
     @Override
+    public void delete(Long aLong) {
+
+    }
+
+    @Override
     public void update(Cita entity) {
         int index=citaList.indexOf(entity);
         citaList.set(index,entity);

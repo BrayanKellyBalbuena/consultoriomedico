@@ -1,52 +1,36 @@
 package edu.itla.consultoriomedico.gui;
-import edu.itla.consultoriomedico.business.entity.Cita;
+
+
+import edu.itla.consultoriomedico.business.enums.ServiceEnum;
+import edu.itla.consultoriomedico.business.services.PacienteService;
+import edu.itla.consultoriomedico.business.services.impl.PacienteServiceImpl;
+import edu.itla.consultoriomedico.business.util.DateUtil;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import edu.itla.consultoriomedico.business.entity.Paciente;
-import edu.itla.consultoriomedico.business.entity.Reservacion;
-import edu.itla.consultoriomedico.business.enums.RepositoryEnum;
-import edu.itla.consultoriomedico.business.factory.ApplicationContext;
-import edu.itla.consultoriomedico.business.repository.PacienteRepository;
-import edu.itla.consultoriomedico.business.repository.ReservacionRepository;
-
-import java.time.LocalDateTime;
-
 
 public class Main {
 
     public static void main(String[] args){
 
-       /* Paciente p = new Paciente();
-        p.setId(12);
-        p.setNombre("Jose");
-        p.setApellido("Kaz");
+        ApplicationContext context =
+                new ClassPathXmlApplicationContext("/spring/applicationContext.xml");
 
-        PacienteRepository prepo =(PacienteRepository) ApplicationContext.getReposiory(RepositoryEnum.PACIENTE_REPOSITORY);
-        System.out.print(p.getNombre());
-        prepo.crear(p);
-        p.setNombre("mario");
-        prepo.modificar(p);
-        Cita c = new Cita();
-        c.setDescripcion("Cita 1");
-        c.setHorario(LocalDateTime.now());
-        Cita c2 = new Cita();
-        c2.setDescripcion("Cita2");
-        c2.setHorario(LocalDateTime.now());
+        PacienteService pacienteService = (PacienteServiceImpl)
+                context.getBean(ServiceEnum.PACIENTE_SERVICE.getValue());
 
-        Reservacion reservacion1 = new Reservacion();
-        reservacion1.setPaciente(p);
-        reservacion1.setCita(c);
-        Reservacion reservacion2 = new Reservacion();
-        reservacion2.setPaciente(p);
-        reservacion2.setCita(c2);
-       
+//      Paciente paciente = new Paciente() ;
+//        paciente.setNombre("Brayan");
+//        paciente.setApellido("Kelly");
+//        paciente.setTelefono(809760821);
+//        paciente.setCorreo("b@b.com");
+//        paciente.setFechaNacimiento(DateUtil.stringToDate("20/12/1995"));
+//
+//        pacienteService.save(paciente);
+//        System.out.println("Guardado");
+        //pacienteService.delete(1L);
+        System.out.println(pacienteService.findAll().get(0).getNombre());
 
-        ReservacionRepository reservacionlist =(ReservacionRepository) ApplicationContext.getReposiory(RepositoryEnum.RESERVACION_REPOSITORY);
-        reservacionlist.crear(reservacion1);
-        reservacionlist.crear(reservacion2);
-
-        reservacionlist.findAll()
-                .stream()
-                .filter(r -> r.getPaciente().getId() == 12)
-                .forEach(x -> System.out.print(x.getPaciente().getId() + "-" + x.getCita()));*/
 
     }
 

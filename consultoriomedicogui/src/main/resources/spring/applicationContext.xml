@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="persistenceContext.xml"/>
+
+    <!-- SERVICES BEAN -->
+    <bean id="pacienteService" class="edu.itla.consultoriomedico.business.services.impl.PacienteServiceImpl">
+        <constructor-arg index="0" ref="pacienteRepository"></constructor-arg>
+    </bean>
+    <bean id="medicoService" class="edu.itla.consultoriomedico.business.services.impl.PacienteServiceImpl">
+        <constructor-arg index="0" ref="pacienteRepository"></constructor-arg>
+    </bean>
+
+    <!--REPOSITORY BEAN -->
+    <bean id="pacienteRepository" class="edu.itla.consultoriomedico.business.repository.impl.PacienteRepositoryImpl">
+        <constructor-arg index="0" ref="sessionFactory"/>
+    </bean>
+
+
+</beans>

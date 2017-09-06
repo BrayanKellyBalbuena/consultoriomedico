@@ -1,24 +1,24 @@
 package edu.itla.consultoriomedico.business.entity;
 
-public class ProcedimientoMedico {
-    private Long Id;
-    private String descripcion;
+public class ProcedimientoMedico extends Catalogo {
 
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
 
-    public Long getId() {
-        return Id;
+        ProcedimientoMedico that = (ProcedimientoMedico) obj;
+
+        if (getId() != null ? !getId().equals(that.getId()) :
+                that.getId() != null)
+            return false;
+
+        return true;
     }
 
-    public void setId(Long id) {
-        Id = id;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public int hashCode() {
+        return (getId() != null ? getId().hashCode() : 0);
     }
 }
 

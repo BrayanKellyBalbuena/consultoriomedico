@@ -2,6 +2,8 @@ package edu.itla.consultoriomedico.business.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 /**
@@ -9,16 +11,11 @@ import java.util.Date;
  */
 public class DateUtil {
 
-    public static Date stringToDate(String date) {
+    public static LocalDate stringToDate(String date) {
 
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-        try {
-             return  simpleDateFormat.parse(date);
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return null;
-        }
+        return LocalDate.parse(date, formatter);
     }
 }
 

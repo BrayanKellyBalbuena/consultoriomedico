@@ -16,6 +16,11 @@ public class ReservacionRepositoryImpl implements ReservacionRepository {
     }
 
     @Override
+    public void delete(Long aLong) {
+
+    }
+
+    @Override
     public void update(Reservacion entity) {
         int index=medicoList.indexOf(entity);
         medicoList.set(index,entity);

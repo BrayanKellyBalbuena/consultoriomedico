@@ -1,19 +1,25 @@
 package edu.itla.consultoriomedico.business.entity;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
 
-public abstract class Persona {
+@MappedSuperclass
+public abstract class Persona implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
     protected String nombre;
     protected String apellido;
     protected String correo;
+    @Column(name = "fecha_nacimiento")
+    protected LocalDate fechaNacimiento;
+    protected int telefono;
 
     public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
-
-    protected int telefono;
 
     public String getNombre() {
         return nombre;
@@ -54,8 +60,6 @@ public abstract class Persona {
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
-
-    protected LocalDate fechaNacimiento;
 
     public int getTelefono() {
         return telefono;

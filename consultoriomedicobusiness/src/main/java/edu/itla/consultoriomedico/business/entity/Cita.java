@@ -2,23 +2,12 @@ package edu.itla.consultoriomedico.business.entity;
 
 import java.time.LocalDateTime;
 
-public class Cita {
+public class Cita extends Catalogo {
 
-    private Long CitaId;
    private Paciente paciente;
    private Medico medico;
    private ProcedimientoMedico procedimientoMedico;
-   private LocalDateTime horario;
-   private String descripcion;
-
-
-    public Long getCitaId() {
-        return CitaId;
-    }
-
-    public void setCitaId(Long citaId) {
-        CitaId = citaId;
-    }
+    private LocalDateTime fecha;
 
     public Paciente getPaciente() {
         return paciente;
@@ -37,24 +26,11 @@ public class Cita {
     }
 
     public LocalDateTime getHorario() {
-        return horario;
+        return fecha;
     }
 
     public void setHorario(LocalDateTime horario) {
-        this.horario = horario;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    @Override
-    public String toString() {
-        return "["+ this.getDescripcion()+" "+ this.getHorario().toString()+"]";
+        this.fecha = horario;
     }
 
     public ProcedimientoMedico getProcedimientoMedico() {
@@ -63,5 +39,26 @@ public class Cita {
 
     public void setProcedimientoMedico(ProcedimientoMedico procedimientoMedico) {
         this.procedimientoMedico = procedimientoMedico;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+
+        Cita that = (Cita) o;
+
+        if (getId() != null ? !getId().equals(that.getId())
+                : that.getId() != null)
+            return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return (getId() != null ? getId().hashCode() : 0);
     }
 }

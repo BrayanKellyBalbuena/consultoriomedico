@@ -16,7 +16,12 @@ public class MedicoRepositoryImpl implements MedicoRepository {
             medicoList.add(entity);
         }
 
-        @Override
+    @Override
+    public void delete(Long aLong) {
+
+    }
+
+    @Override
         public void update(Medico entity) {
             int index=medicoList.indexOf(entity);
             medicoList.set(index,entity);

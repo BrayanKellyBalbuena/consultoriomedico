@@ -15,6 +15,11 @@ public class EspecialidadRepositoryImpl implements EspecialidadRepository {
     }
 
     @Override
+    public void delete(Long aLong) {
+
+    }
+
+    @Override
     public void update(EspecialidadMedica entity) {
         int index= especialidadMedicaList.indexOf(entity);
         especialidadMedicaList.set(index,entity);

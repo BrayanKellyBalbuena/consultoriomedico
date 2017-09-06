@@ -16,6 +16,11 @@ public class ProcedimientoMedicoRepositoryImpl implements ProcedimientoMedicoRep
     }
 
     @Override
+    public void delete(Long aLong) {
+
+    }
+
+    @Override
     public void update(ProcedimientoMedico entity) {
         int index = listProcedimiento.indexOf(entity);
         if(index != -1) {
