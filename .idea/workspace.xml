@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd941eba-e8dd-4923-83b7-debc20de44f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/paciente/PacienteAddController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteEditModal.fxml" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteAddModal.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Persona.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Persona.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicogui/target/classes/fxml/FXMLPacienteView.fxml" afterPath="$PROJECT_DIR$/consultoriomedicogui/target/classes/fxml/FXMLPacienteView.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/consultoriomedicogui/target/" />
@@ -37,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/paciente/PacienteAddController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="669">
-              <caret line="73" column="29" lean-forward="false" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+              <caret line="71" column="29" lean-forward="false" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -517,7 +512,7 @@
       <workItem from="1504661293150" duration="7484000" />
       <workItem from="1504669780385" duration="591000" />
       <workItem from="1504740143075" duration="3425000" />
-      <workItem from="1504804754610" duration="203000" />
+      <workItem from="1504804754610" duration="667000" />
     </task>
     <task id="LOCAL-00001" summary="Completada Tarea JDBC">
       <created>1503629995225</created>
@@ -533,15 +528,21 @@
       <option name="project" value="LOCAL" />
       <updated>1504669931229</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="terminana ventanas pacinete list y edit">
+      <created>1504805004448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1504805004448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65079000" />
+    <option name="totallyTimeSpent" value="65543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -611,7 +612,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completada Tarea JDBC" />
     <MESSAGE value="Configurado spring y hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configurado spring y hibernate" />
+    <MESSAGE value="terminana ventanas pacinete list y edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="terminana ventanas pacinete list y edit" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -992,7 +994,7 @@
     <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/paciente/PacienteAddController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="669">
-          <caret line="73" column="29" lean-forward="false" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+          <caret line="71" column="29" lean-forward="false" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
