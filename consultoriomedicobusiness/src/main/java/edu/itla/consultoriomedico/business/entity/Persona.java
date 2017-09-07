@@ -16,6 +16,9 @@ public abstract class Persona implements Serializable {
     @Column(name = "fecha_nacimiento")
     protected LocalDate fechaNacimiento;
     protected int telefono;
+    protected String direccion;
+
+
 
     public void setTelefono(int telefono) {
         this.telefono = telefono;
@@ -63,5 +66,13 @@ public abstract class Persona implements Serializable {
 
     public int getTelefono() {
         return telefono;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 }

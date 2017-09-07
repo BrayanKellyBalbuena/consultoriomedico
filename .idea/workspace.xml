@@ -1,69 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd941eba-e8dd-4923-83b7-debc20de44f4" name="Default" comment="Configurado spring y hibernate">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_7_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_2_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Spring_4_3_10_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Catalogo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/enums/ServiceEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/services/GenericService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/services/PacienteService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/services/impl/PacienteServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/util/MessageDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteEditModal.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/spring/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/spring/persistenceContext.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/factory/ApplicationContext.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/services/ConsultorioServices.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_5.xml" />
+    <list default="true" id="bd941eba-e8dd-4923-83b7-debc20de44f4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/paciente/PacienteAddController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteEditModal.fxml" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteAddModal.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/consultoriomedicobusiness.iml" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/consultoriomedicobusiness.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/pom.xml" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Cita.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Cita.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/EspecialidadMedica.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/EspecialidadMedica.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Medico.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Medico.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Paciente.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Paciente.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Persona.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Persona.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/ProcedimientoMedico.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/ProcedimientoMedico.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/GenericRepository.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/GenericRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/CitaRepositoryImpl.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/CitaRepositoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/EspecialidadRepositoryImpl.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/EspecialidadRepositoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/MedicoRepositoryImpl.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/MedicoRepositoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/PacienteRepositoryImpl.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/PacienteRepositoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/ProcedimientoMedicoRepositoryImpl.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/ProcedimientoMedicoRepositoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/ReservacionRepositoryImpl.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/ReservacionRepositoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/util/DateUtil.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/util/DateUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/util/TestConnection.java" afterPath="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/util/TestConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicogui/consultoriomedicogui.iml" afterPath="$PROJECT_DIR$/consultoriomedicogui/consultoriomedicogui.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicogui/pom.xml" afterPath="$PROJECT_DIR$/consultoriomedicogui/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/Main.java" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteView.fxml" afterPath="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultoriomedicogui/target/classes/fxml/FXMLPacienteView.fxml" afterPath="$PROJECT_DIR$/consultoriomedicogui/target/classes/fxml/FXMLPacienteView.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,21 +21,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PacienteController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PacienteController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="213" column="35" lean-forward="false" selection-start-line="213" selection-start-column="35" selection-end-line="213" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="3026">
+              <caret line="215" column="53" lean-forward="false" selection-start-line="215" selection-start-column="53" selection-end-line="215" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainLayoutController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/MainLayoutController.java">
+      <file leaf-file-name="PacienteAddController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/paciente/PacienteAddController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="35" column="98" lean-forward="false" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="98" />
+            <state relative-caret-position="669">
+              <caret line="73" column="29" lean-forward="false" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Persona.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Persona.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+              <folding>
+                <element signature="e#1490#1491#0" expanded="true" />
+                <element signature="e#1522#1523#0" expanded="true" />
+                <element signature="e#1572#1573#0" expanded="true" />
+                <element signature="e#1614#1615#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FXMLPacienteView.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteView.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="83" lean-forward="false" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -163,7 +138,6 @@
         <option value="$PROJECT_DIR$/consultoriomedicogui/pom.xml" />
         <option value="$PROJECT_DIR$/consultoriomedicobusiness/pom.xml" />
         <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Persona.java" />
         <option value="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/repository/impl/PacienteRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/Main.java" />
         <option value="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/services/impl/PacienteServiceImpl.java" />
@@ -174,7 +148,11 @@
         <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteView.fxml" />
         <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/MainLayoutController.java" />
+        <option value="C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/util/Callback.java" />
+        <option value="$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Persona.java" />
+        <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteAddModal.fxml" />
         <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java" />
+        <option value="$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/paciente/PacienteAddController.java" />
       </list>
     </option>
   </component>
@@ -207,6 +185,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,6 +207,40 @@
             <path>
               <item name="consultoriomedico" type="b2602c69:ProjectViewProjectNode" />
               <item name="consultoriomedico" type="462c0819:PsiDirectoryNode" />
+              <item name="consultoriomedicobusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultoriomedico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultoriomedico" type="462c0819:PsiDirectoryNode" />
+              <item name="consultoriomedicobusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultoriomedico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultoriomedico" type="462c0819:PsiDirectoryNode" />
+              <item name="consultoriomedicobusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultoriomedico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultoriomedico" type="462c0819:PsiDirectoryNode" />
+              <item name="consultoriomedicobusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultoriomedico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultoriomedico" type="462c0819:PsiDirectoryNode" />
               <item name="consultoriomedicogui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -259,16 +272,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="consultoriomedico" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consultoriomedico" type="462c0819:PsiDirectoryNode" />
-              <item name="consultoriomedicogui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="consultoriomedico" type="b2602c69:ProjectViewProjectNode" />
@@ -291,8 +294,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -304,6 +305,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,6 +314,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -512,7 +515,9 @@
       <workItem from="1504490698551" duration="4138000" />
       <workItem from="1504571477266" duration="7948000" />
       <workItem from="1504661293150" duration="7484000" />
-      <workItem from="1504669780385" duration="136000" />
+      <workItem from="1504669780385" duration="591000" />
+      <workItem from="1504740143075" duration="3425000" />
+      <workItem from="1504804754610" duration="203000" />
     </task>
     <task id="LOCAL-00001" summary="Completada Tarea JDBC">
       <created>1503629995225</created>
@@ -521,18 +526,25 @@
       <option name="project" value="LOCAL" />
       <updated>1503629995225</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Configurado spring y hibernate">
+      <created>1504669931229</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1504669931229</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60996000" />
+    <option name="totallyTimeSpent" value="65079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -556,6 +568,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3122886" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -616,20 +629,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Dictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="1375" column="0" lean-forward="false" selection-start-line="1375" selection-start-column="0" selection-end-line="1375" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/AbstractMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -719,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,9 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding>
-            <element signature="e#522#523#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,9 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,14 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Persona.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicobusiness/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -857,7 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,7 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,17 +867,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteEditModal.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -910,9 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-          <folding>
-            <element signature="e#671#672#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -920,9 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,7 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,17 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="238" lean-forward="false" selection-start-line="10" selection-start-column="161" selection-end-line="10" selection-end-column="238" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/spring/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -979,19 +930,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/util/Callback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/MainLayoutController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="17">
           <caret line="35" column="98" lean-forward="false" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultoriomedicobusiness/src/main/java/edu/itla/consultoriomedico/business/entity/Persona.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <folding>
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#1522#1523#0" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+            <element signature="e#1614#1615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteAddModal.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="100" lean-forward="false" selection-start-line="17" selection-start-column="100" selection-end-line="17" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/resources/fxml/FXMLPacienteView.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="83" lean-forward="false" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/PacienteController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="213" column="35" lean-forward="false" selection-start-line="213" selection-start-column="35" selection-end-line="213" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="3026">
+          <caret line="215" column="53" lean-forward="false" selection-start-line="215" selection-start-column="53" selection-end-line="215" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultoriomedicogui/src/main/java/edu/itla/consultoriomedico/gui/controllers/paciente/PacienteAddController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="73" column="29" lean-forward="false" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

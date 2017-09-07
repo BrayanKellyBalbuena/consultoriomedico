@@ -3,8 +3,7 @@ package edu.itla.consultoriomedico.gui.controllers;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXButton;
@@ -31,7 +30,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -64,7 +62,7 @@ public class PacienteController implements Initializable {
     private TableColumn<Paciente, String> telefonoColumn;
 
     @FXML
-    private TableColumn<Paciente, Date> fechaColumn;
+    private TableColumn<Paciente, LocalDate> fechaColumn;
 
     @FXML
     private TableColumn<Paciente, String> direccionColumn;
@@ -120,25 +118,26 @@ public class PacienteController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        {
+
             context = new ClassPathXmlApplicationContext("/spring/applicationContext.xml");
             pacienteService = (PacienteServiceImpl)
                     context.getBean(ServiceEnum.PACIENTE_SERVICE.getValue());
-            //  pacienteDatos = FXCollections.observableArrayList(pacienteService.findAll());
-        }
-        ;
+        pacienteDatos = FXCollections.observableArrayList(pacienteService.findAll());
+        initTableView();
+    }
 
-//
-//        idColumn.setCellValueFactory(new PropertyValueFactory<Paciente, Long>("id"));
-//        nombreColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getNombre()));
-//        apellidoColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getApellido()));
-//        telefonoColumn.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getTelefono()).asString());
-//
-//
-//        tblPacientes.getSelectionModel().selectedItemProperty().addListener(
-//                (observable, oldValue, newValue) -> showPacienteDetalles(newValue));
-//
-//        tblPacientes.setItems(pacienteDatos);
+    private void initTableView() {
+        idColumn.setCellValueFactory(new PropertyValueFactory<Paciente, Long>("id"));
+        nombreColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getNombre()));
+        apellidoColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getApellido()));
+        fechaColumn.setCellValueFactory(new PropertyValueFactory<Paciente, LocalDate>("fechaNacimiento"));
+        telefonoColumn.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getTelefono()).asString());
+        direccionColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getDireccion()));
+
+        tblPacientes.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldValue, newValue) -> showPacienteDetalles(newValue));
+
+        tblPacientes.setItems(pacienteDatos);
     }
 
 
@@ -213,13 +212,13 @@ public class PacienteController implements Initializable {
     @FXML
     void nuevo(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/FXMLPacienteEditModal.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/FXMLPacienteAddModal.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.initStyle(StageStyle.UTILITY);
-            stage.setTitle("ABC");
-            stage.setScene(new Scene(root1));
+            stage.setTitle("Agregar Paciente");
+            stage.setScene(new Scene(root));
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
