@@ -13,6 +13,7 @@ import edu.itla.consultoriomedico.business.entity.Paciente;
 import edu.itla.consultoriomedico.business.enums.ServiceEnum;
 import edu.itla.consultoriomedico.business.services.PacienteService;
 import edu.itla.consultoriomedico.business.services.impl.PacienteServiceImpl;
+import edu.itla.consultoriomedico.gui.controllers.paciente.PacienteAddController;
 import edu.itla.consultoriomedico.gui.util.MessageDialog;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -41,6 +42,9 @@ public class PacienteController implements Initializable {
 
     private ObservableList<Paciente> pacienteDatos;
     private ObservableList<Paciente> pacienteDatosTemp;
+    PacienteService pacienteService;
+    ApplicationContext context;
+
 
     @FXML
     private ImageView imgPaciente;
@@ -110,8 +114,6 @@ public class PacienteController implements Initializable {
     @FXML
     private JFXButton btnCancelar;
 
-    PacienteService pacienteService;
-    ApplicationContext context;
 
 
 
@@ -134,29 +136,33 @@ public class PacienteController implements Initializable {
         telefonoColumn.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getTelefono()).asString());
         direccionColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getDireccion()));
 
-        tblPacientes.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> showPacienteDetalles(newValue));
+//        tblPacientes.getSelectionModel().selectedItemProperty().addListener(
+//                (observable, oldValue, newValue) -> showPacienteDetalles(newValue));
 
         tblPacientes.setItems(pacienteDatos);
     }
 
 
-    private void showPacienteDetalles(Paciente paciente) {
-        if (paciente != null) {
-            // Fill the labels with info from the person object.
-            txtNombre.setText(paciente.getNombre());
-            txtApellido.setText(paciente.getApellido());
-            txtId.setText(String.valueOf(paciente.getId()));
-            txtTelefono.setText(Integer.toString(paciente.getTelefono()));
+//    private void showPacienteDetalles(Paciente paciente) {
+//        if (paciente != null) {
+//            // Fill the labels with info from the person object.
+//            txtNombre.setText(paciente.getNombre());
+//            txtApellido.setText(paciente.getApellido());
+//            txtId.setText(String.valueOf(paciente.getId()));
+//            txtTelefono.setText(Integer.toString(paciente.getTelefono()));
+//
+//        } else {
+//            limpiarCampos();
+//        }
+//    }
 
-        } else {
-            limpiarCampos();
-        }
+    public void refrescar() {
+        pacienteDatos = FXCollections.observableArrayList(pacienteService.findAll());
+        tblPacientes.setItems(pacienteDatos);
+        tblPacientes.refresh();
+        ;
     }
 
-    private void refrescar() {
-        pacienteDatos.setAll(pacienteService.findAll());
-    }
 
 
     public void loadImage(ActionEvent event) {
@@ -201,28 +207,57 @@ public class PacienteController implements Initializable {
 
     @FXML
     void editar(ActionEvent event) {
+        if (getPacienteSelecciondado() == null) {
+            showPopup("Error no paciente", "Debe seleccionar un paciente", Alert.AlertType.WARNING);
+        } else
+            loadNuevoEditModal("Editar Paciente", true);
+    }
+
+    @FXML
+    private void eliminar(ActionEvent event) {
+        Paciente paciente = getPacienteSelecciondado();
+        if (paciente == null) {
+            showPopup("Error no paciente", "Debe seleccionar un paciente", Alert.AlertType.WARNING);
+            return;
+        }
+        try {
+            pacienteService.delete(getPacienteSelecciondado().getId());
+            pacienteDatos.remove(paciente);
+            showPopup("Estatus eliminar paciente", "Paciente Eliminado con exito", Alert.AlertType.WARNING);
+        } catch (Exception e) {
+            showPopup("Eliminar paciente estatus", "Error al eliminar el paciente", Alert.AlertType.WARNING);
+        }
 
     }
 
     @FXML
-    void eliminar(ActionEvent event) {
-
+    private void nuevo(ActionEvent event) {
+        loadNuevoEditModal("Agregar nuevo Paciente", false);
     }
 
-    @FXML
-    void nuevo(ActionEvent event) {
+    private void loadNuevoEditModal(String titulo, Boolean opcion) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/FXMLPacienteAddModal.fxml"));
             Parent root = (Parent) fxmlLoader.load();
+            if (opcion) {
+                PacienteAddController controller = fxmlLoader.getController();
+                controller.setPersonEdit(this, getPacienteSelecciondado());
+            }
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.initStyle(StageStyle.UTILITY);
             stage.setTitle("Agregar Paciente");
             stage.setScene(new Scene(root));
             stage.show();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+        refrescar();
+    }
+
+    private Paciente getPacienteSelecciondado() {
+        return tblPacientes.getSelectionModel().getSelectedItem();
 
     }
 
