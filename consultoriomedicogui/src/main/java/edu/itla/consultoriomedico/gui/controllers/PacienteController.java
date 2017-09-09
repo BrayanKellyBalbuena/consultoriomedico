@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXButton;
@@ -269,10 +270,23 @@ public class PacienteController implements Initializable {
     @FXML
     private void search(ActionEvent event) {
         if (txtSearch.getText().isEmpty()) {
-            showPopup("Busqueda Pacientes", "el debe introducir el id", Alert.AlertType.WARNING);
+            refrescar();
+        } else {
+            try {
+                Paciente pacienteTemp = pacienteService.
+                        findById(Long.parseLong(txtSearch.getText()));
+                if (pacienteTemp != null) {
+                    pacienteDatos.setAll(pacienteService.
+                            findById(Long.parseLong(txtSearch.getText())));
+                } else {
+                    showPopup("Mensaje busqueda paciente", "Paciente no encontrado",
+                            Alert.AlertType.INFORMATION);
+                }
+
+            } catch (NumberFormatException ex) {
+                showPopup("Error", "error", Alert.AlertType.WARNING);
+            }
         }
-        pacienteDatos.setAll(pacienteService.
-                findById(Long.parseLong(txtSearch.getText())));
 
     }
 

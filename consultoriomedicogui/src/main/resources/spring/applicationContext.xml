@@ -9,14 +9,17 @@
     <bean id="pacienteService" class="edu.itla.consultoriomedico.business.services.impl.PacienteServiceImpl">
         <constructor-arg index="0" ref="pacienteRepository"></constructor-arg>
     </bean>
-    <bean id="medicoService" class="edu.itla.consultoriomedico.business.services.impl.PacienteServiceImpl">
-        <constructor-arg index="0" ref="pacienteRepository"></constructor-arg>
+    <bean id="medicoService" class="edu.itla.consultoriomedico.business.services.impl.MedicoServiceImpl">
+        <constructor-arg index="0" ref="medicoRepository"></constructor-arg>
     </bean>
+
 
     <!--REPOSITORY BEAN -->
     <bean id="pacienteRepository" class="edu.itla.consultoriomedico.business.repository.impl.PacienteRepositoryImpl">
         <constructor-arg index="0" ref="sessionFactory"/>
     </bean>
-
+    <bean id="medicoRepository" class="edu.itla.consultoriomedico.business.repository.impl.MedicoRepositoryImpl">
+        <constructor-arg index="0" ref="sessionFactory"/>
+    </bean>
 
 </beans>

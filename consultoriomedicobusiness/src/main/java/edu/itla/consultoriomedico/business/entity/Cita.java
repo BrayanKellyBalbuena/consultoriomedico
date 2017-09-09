@@ -1,12 +1,18 @@
 package edu.itla.consultoriomedico.business.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.time.LocalDateTime;
 
+@Entity
 public class Cita extends Catalogo {
 
-   private Paciente paciente;
-   private Medico medico;
-   private ProcedimientoMedico procedimientoMedico;
+    @ManyToOne
+    @JoinColumn(name = "paciente_id")
+    private Paciente paciente;
+    private Medico medico;
+    private ProcedimientoMedico procedimientoMedico;
     private LocalDateTime fecha;
 
     public Paciente getPaciente() {

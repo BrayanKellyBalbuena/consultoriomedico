@@ -15,7 +15,7 @@
 
 <AnchorPane maxHeight="394.0" maxWidth="501.0" minHeight="377.0" minWidth="501.0" prefHeight="394.0" prefWidth="501.0"
             xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="edu.itla.consultoriomedico.gui.controllers.paciente.PacienteAddController">
+            fx:controller="edu.itla.consultoriomedico.gui.controllers.medico.MedicoAddEditController">
     <children>
         <GridPane layoutX="26.0" layoutY="77.0" prefHeight="215.0" prefWidth="449.0">
             <columnConstraints>
@@ -51,15 +51,15 @@
         <HBox layoutX="247.0" layoutY="349.0" spacing="2.0" AnchorPane.bottomAnchor="14.0"
               AnchorPane.rightAnchor="28.0">
             <children>
-                <JFXButton fx:id="btnGuadar" buttonType="RAISED" onAction="#guarda" prefHeight="27.0" prefWidth="112.0"
-                           ripplerFill="#05903f" text="Guardar"/>
+                <JFXButton fx:id="btnGuadar" buttonType="RAISED" onAction="#guardar" prefHeight="27.0" prefWidth="112.0"
+                           ripplerFill="#0a5ca8" text="Guardar"/>
                 <JFXButton fx:id="btnCancelar" buttonType="RAISED" onAction="#cancelar" prefHeight="23.0"
-                           prefWidth="98.0" ripplerFill="#bf070d" text="Cancelar"/>
+                           prefWidth="98.0" ripplerFill="#d30f2f" text="Cancelar"/>
             </children>
         </HBox>
-        <Pane layoutY="-4.0" opacity="0.74" prefHeight="66.0" prefWidth="501.0" style="-fx-background-color: green;">
+        <Pane opacity="0.78" prefHeight="60.0" prefWidth="501.0" style="-fx-background-color: blue;">
             <children>
-                <FontAwesomeIconView fill="#ececee" glyphName="USERS" layoutX="224.0" layoutY="57.0" size="50"/>
+                <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="223.0" layoutY="47.0" size="50"/>
             </children>
         </Pane>
     </children>

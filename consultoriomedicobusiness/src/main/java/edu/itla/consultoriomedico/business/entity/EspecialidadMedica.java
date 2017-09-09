@@ -1,10 +1,15 @@
 package edu.itla.consultoriomedico.business.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-public class EspecialidadMedica extends Catalogo implements Serializable {
+@Entity
+public class EspecialidadMedica extends Catalogo {
+
+    @Transient
     Set<Medico> Medicos = new HashSet<>();
 
     public boolean equals(Object obj) {
