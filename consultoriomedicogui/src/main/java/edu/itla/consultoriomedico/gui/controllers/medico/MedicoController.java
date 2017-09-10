@@ -47,9 +47,6 @@ public class MedicoController implements Initializable {
     ApplicationContext context;
 
 
-    @FXML
-    private ImageView imgMedico;
-    private Image img;
 
     @FXML
     private TableView<Medico> tblMedicos;
@@ -63,6 +60,8 @@ public class MedicoController implements Initializable {
     @FXML
     private TableColumn<Medico, String> apellidoColumn;
 
+    @FXML private TableColumn<Medico, String> especialidad;
+
     @FXML
     private TableColumn<Medico, String> telefonoColumn;
 
@@ -72,17 +71,8 @@ public class MedicoController implements Initializable {
     @FXML
     private TableColumn<Medico, String> direccionColumn;
 
-    @FXML
-    private JFXTextField txtId;
 
-    @FXML
-    private JFXTextField txtNombre;
 
-    @FXML
-    private JFXTextField txtApellido;
-
-    @FXML
-    private JFXTextField txtTelefono;
 
     @FXML
     private JFXTextField txtSearch;
@@ -98,25 +88,6 @@ public class MedicoController implements Initializable {
 
     @FXML
     private JFXButton btnSearch;
-
-
-    @FXML
-    private JFXTextField txtCorreo;
-
-    @FXML
-    private JFXDatePicker dtpFechaNac;
-
-    @FXML
-    private JFXTextField txtid;
-
-    @FXML
-    private JFXButton btnGuadar;
-
-    @FXML
-    private JFXButton btnCancelar;
-
-
-
 
 
     @Override
@@ -136,6 +107,8 @@ public class MedicoController implements Initializable {
         fechaColumn.setCellValueFactory(new PropertyValueFactory<Medico, LocalDate>("fechaNacimiento"));
         telefonoColumn.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getTelefono()).asString());
         direccionColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getDireccion()));
+        especialidad.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getEspecialidad().getNombre()));
+
 
 //        tblPacientes.getSelectionModel().selectedItemProperty().addListener(
 //                (observable, oldValue, newValue) -> showPacienteDetalles(newValue));
@@ -261,10 +234,4 @@ public class MedicoController implements Initializable {
 
     }
 
-    private void limpiarCampos() {
-        txtId.setText("");
-        txtNombre.setText("");
-        txtApellido.setText("");
-        txtTelefono.setText("");
-    }
 }

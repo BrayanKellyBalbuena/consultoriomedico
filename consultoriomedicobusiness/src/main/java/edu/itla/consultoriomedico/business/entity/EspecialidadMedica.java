@@ -1,18 +1,28 @@
 package edu.itla.consultoriomedico.business.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
 @Table(name = "especialidad_medica")
 public class EspecialidadMedica extends Catalogo {
 
-    @Transient
-    Set<Medico> Medicos = new HashSet<>();
+    @OneToMany(mappedBy = "especialidad")
+    private List<Medico> Medicos;
+
+    public List<Medico> getMedicos() {
+        return Medicos;
+    }
+
+    public void setMedicos(List<Medico> medicos) {
+        Medicos = medicos;
+    }
 
     public boolean equals(Object obj) {
         if (this == obj)

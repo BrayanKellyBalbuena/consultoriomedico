@@ -1,9 +1,12 @@
 package edu.itla.consultoriomedico.gui.controllers.medico;
 
 import com.jfoenix.controls.*;
+import edu.itla.consultoriomedico.business.entity.EspecialidadMedica;
 import edu.itla.consultoriomedico.business.entity.Medico;
 import edu.itla.consultoriomedico.business.enums.ServiceEnum;
+import edu.itla.consultoriomedico.business.services.EspecialidadMedicaService;
 import edu.itla.consultoriomedico.business.services.MedicoService;
+import edu.itla.consultoriomedico.business.services.impl.EspecialidadMedicaServiceImpl;
 import edu.itla.consultoriomedico.business.services.impl.MedicoServiceImpl;
 import edu.itla.consultoriomedico.gui.util.MessageDialog;
 import javafx.collections.FXCollections;
@@ -25,8 +28,9 @@ public class MedicoAddEditController implements Initializable {
     private MedicoService service;
     private Medico medicoTemp;
     private boolean isEdit = false;
-    ApplicationContext context;
-    MedicoController p;
+    private ApplicationContext context;
+    private MedicoController p;
+    private EspecialidadMedicaService especialidadMedicaService;
 
     @FXML
     private JFXTextField txtNombre;
@@ -66,8 +70,12 @@ public class MedicoAddEditController implements Initializable {
         context = new ClassPathXmlApplicationContext("/spring/applicationContext.xml");
         service = (MedicoServiceImpl)
                 context.getBean(ServiceEnum.MEDICO_SERVICE.getValue());
-        s = FXCollections.observableArrayList(service.findAll().stream()
+
+      especialidadMedicaService = (EspecialidadMedicaServiceImpl)
+                context.getBean(ServiceEnum.ESPECIALIDAD_SERVICE.getValue());
+        s = FXCollections.observableArrayList(especialidadMedicaService.findAll().stream()
                 .map(m  -> m.getId() + "- "+ m.getNombre()).collect(Collectors.toList()));
+
         cbEspecialidad.setItems(s);
     }
 
@@ -83,6 +91,10 @@ public class MedicoAddEditController implements Initializable {
             this.dtpFechaNac.setValue(medico.getFechaNacimiento());
             this.txtTelefono.setText(String.valueOf(medico.getTelefono()));
             this.txtDireccion.setText(String.valueOf(medico.getDireccion()));
+            s = FXCollections.observableArrayList(especialidadMedicaService.findAll().stream()
+                    .map(m  -> m.getId() + "- "+ m.getNombre()).collect(Collectors.toList()));
+            this.cbEspecialidad.setItems(s);
+            this.cbEspecialidad.getSelectionModel().select(0);
         }
     }
 
@@ -129,14 +141,20 @@ public class MedicoAddEditController implements Initializable {
 
     private Medico getMedicoTempFull() {
         medicoTemp = new Medico();
+        EspecialidadMedica espTemp = new EspecialidadMedica();
         if (isEdit) {
             medicoTemp.setId(Long.parseLong(txtid.getText()));
+        }
+        if(especialidadMedicaService.findAll().size() != 0)
+        {
+            espTemp = especialidadMedicaService.findById(Long.parseLong( cbEspecialidad.getSelectionModel().getSelectedItem().toString().substring(0,1)));
         }
         medicoTemp.setNombre(txtNombre.getText());
         medicoTemp.setApellido(txtApellido.getText());
         medicoTemp.setFechaNacimiento(dtpFechaNac.getValue());
         medicoTemp.setTelefono(Integer.parseInt(txtTelefono.getText()));
         medicoTemp.setDireccion(txtDireccion.getText());
+        medicoTemp.setEspecialidad(espTemp);
 
         return medicoTemp;
     }
