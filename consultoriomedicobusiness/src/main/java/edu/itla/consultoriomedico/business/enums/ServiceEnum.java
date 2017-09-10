@@ -5,7 +5,7 @@ public enum ServiceEnum {
     MEDICO_SERVICE("medicoService"),
     RESERVACION_SERVICE("reservacionService"),
     PROCEDIMIENTO_SERVICE("procedimientoService"),
-    ESPECIALIDAD_SERVICE("citaService");
+    ESPECIALIDAD_SERVICE("especialidadMedicaService");
 
     private final String value;
 

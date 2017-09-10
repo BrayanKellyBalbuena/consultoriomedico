@@ -10,7 +10,7 @@
 
 <AnchorPane minHeight="400.0" minWidth="700.0" prefHeight="400.0" prefWidth="700.0"
             xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="edu.itla.consultoriomedico.gui.controllers.MedicoController">
+            fx:controller="edu.itla.consultoriomedico.gui.controllers.medico.MedicoController">
     <children>
         <SplitPane layoutY="56.0" prefHeight="355.0" prefWidth="600.0" AnchorPane.bottomAnchor="-9.0"
                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="56.0">

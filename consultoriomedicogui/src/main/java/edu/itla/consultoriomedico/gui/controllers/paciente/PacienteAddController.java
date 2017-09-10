@@ -5,9 +5,7 @@ import edu.itla.consultoriomedico.business.entity.Paciente;
 import edu.itla.consultoriomedico.business.enums.ServiceEnum;
 import edu.itla.consultoriomedico.business.services.PacienteService;
 import edu.itla.consultoriomedico.business.services.impl.PacienteServiceImpl;
-import edu.itla.consultoriomedico.gui.controllers.PacienteController;
 import edu.itla.consultoriomedico.gui.util.MessageDialog;
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 
@@ -19,7 +17,6 @@ import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import org.omg.CORBA.PRIVATE_MEMBER;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

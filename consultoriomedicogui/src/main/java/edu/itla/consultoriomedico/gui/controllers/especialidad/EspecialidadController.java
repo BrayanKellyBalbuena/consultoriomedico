@@ -1,19 +1,12 @@
-package edu.itla.consultoriomedico.gui.controllers;
-
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
-import java.time.LocalDate;
-import java.util.List;
-import java.util.ResourceBundle;
+package edu.itla.consultoriomedico.gui.controllers.especialidad;
 
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
-import edu.itla.consultoriomedico.business.entity.Medico;
+import edu.itla.consultoriomedico.business.entity.EspecialidadMedica;
 import edu.itla.consultoriomedico.business.enums.ServiceEnum;
+import edu.itla.consultoriomedico.business.services.EspecialidadMedicaService;
 import edu.itla.consultoriomedico.business.services.MedicoService;
-import edu.itla.consultoriomedico.business.services.impl.MedicoServiceImpl;
+import edu.itla.consultoriomedico.business.services.impl.EspecialidadMedicaServiceImpl;
 import edu.itla.consultoriomedico.gui.controllers.medico.MedicoAddEditController;
 import edu.itla.consultoriomedico.gui.util.MessageDialog;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -30,8 +23,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -39,50 +30,32 @@ import javafx.stage.StageStyle;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MedicoController implements Initializable {
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.time.LocalDate;
+import java.util.ResourceBundle;
 
-    private ObservableList<Medico> medicoDatos;
-    private ObservableList<Medico> medicoDatosTemp;
-    MedicoService medicoService;
+public class EspecialidadController implements Initializable {
+
+    private ObservableList<EspecialidadMedica> especialidadDatos;
+    private ObservableList<EspecialidadMedica> medicoDatosTemp;
+    EspecialidadMedicaService especialidadService;
     ApplicationContext context;
-
-
-    @FXML
-    private ImageView imgMedico;
-    private Image img;
+    
 
     @FXML
-    private TableView<Medico> tblMedicos;
+    private TableView<EspecialidadMedica> tblEspecialidades;
 
     @FXML
-    private TableColumn<Medico, Long> idColumn;
+    private TableColumn<EspecialidadMedica, Long> idColumn;
 
     @FXML
-    private TableColumn<Medico, String> nombreColumn;
+    private TableColumn<EspecialidadMedica, String> nombreColumn;
+    
 
     @FXML
-    private TableColumn<Medico, String> apellidoColumn;
-
-    @FXML
-    private TableColumn<Medico, String> telefonoColumn;
-
-    @FXML
-    private TableColumn<Medico, LocalDate> fechaColumn;
-
-    @FXML
-    private TableColumn<Medico, String> direccionColumn;
-
-    @FXML
-    private JFXTextField txtId;
-
-    @FXML
-    private JFXTextField txtNombre;
-
-    @FXML
-    private JFXTextField txtApellido;
-
-    @FXML
-    private JFXTextField txtTelefono;
+    private TableColumn<EspecialidadMedica, String> descripcionColumn;
 
     @FXML
     private JFXTextField txtSearch;
@@ -99,16 +72,6 @@ public class MedicoController implements Initializable {
     @FXML
     private JFXButton btnSearch;
 
-
-    @FXML
-    private JFXTextField txtCorreo;
-
-    @FXML
-    private JFXDatePicker dtpFechaNac;
-
-    @FXML
-    private JFXTextField txtid;
-
     @FXML
     private JFXButton btnGuadar;
 
@@ -123,24 +86,21 @@ public class MedicoController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         context = new ClassPathXmlApplicationContext("/spring/applicationContext.xml");
-        medicoService = (MedicoServiceImpl)
-                context.getBean(ServiceEnum.MEDICO_SERVICE.getValue());
-        medicoDatos = FXCollections.observableArrayList(medicoService.findAll());
+        especialidadService = (EspecialidadMedicaServiceImpl)
+                context.getBean(ServiceEnum.ESPECIALIDAD_SERVICE.getValue());
+        especialidadDatos = FXCollections.observableArrayList(especialidadService.findAll());
         initTableView();
     }
 
     private void initTableView() {
-        idColumn.setCellValueFactory(new PropertyValueFactory<Medico, Long>("id"));
-        nombreColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getNombre()));
-        apellidoColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getApellido()));
-        fechaColumn.setCellValueFactory(new PropertyValueFactory<Medico, LocalDate>("fechaNacimiento"));
-        telefonoColumn.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getTelefono()).asString());
-        direccionColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getDireccion()));
+        idColumn.setCellValueFactory(new PropertyValueFactory<EspecialidadMedica, Long>("id"));
+        nombreColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getNombre()));;
+        descripcionColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getDescripcion()));
 
 //        tblPacientes.getSelectionModel().selectedItemProperty().addListener(
 //                (observable, oldValue, newValue) -> showPacienteDetalles(newValue));
 
-        tblMedicos.setItems(medicoDatos);
+        tblEspecialidades.setItems(especialidadDatos);
     }
 
 
@@ -158,9 +118,9 @@ public class MedicoController implements Initializable {
 //    }
 
     public void refrescar() {
-        medicoDatos = FXCollections.observableArrayList(medicoService.findAll());
-        tblMedicos.setItems(medicoDatos);
-        tblMedicos.refresh();
+        especialidadDatos = FXCollections.observableArrayList(especialidadService.findAll());
+        tblEspecialidades.setItems(especialidadDatos);
+        tblEspecialidades.refresh();
         ;
     }
 
@@ -179,22 +139,22 @@ public class MedicoController implements Initializable {
 
     @FXML
     void editar(ActionEvent event) {
-        if (getMedicoSelecciondado() == null) {
-            showPopup("Error no medico", "Debe seleccionar un medico", Alert.AlertType.WARNING);
+        if (getEspecialidadSelecciondado() == null) {
+            showPopup("Error no medico", "Debe seleccionar un una especialidad", Alert.AlertType.WARNING);
         } else
             loadNuevoEditModal("Editar medico", true);
     }
 
     @FXML
     private void eliminar(ActionEvent event) {
-        Medico medico = getMedicoSelecciondado();
-        if (medico == null) {
-            showPopup("Error no medico", "Debe seleccionar un medico", Alert.AlertType.WARNING);
+        EspecialidadMedica especialidad = getEspecialidadSelecciondado();
+        if (especialidad == null) {
+            showPopup("Error no especialidad", "Debe seleccionar una especialidad", Alert.AlertType.WARNING);
             return;
         }
         try {
-            medicoService.delete(getMedicoSelecciondado().getId());
-            medicoDatos.remove(medico);
+            especialidadService.delete(getEspecialidadSelecciondado().getId());
+            especialidadDatos.remove(especialidad);
             showPopup("Estatus eliminar medico", "Medico Eliminado con exito", Alert.AlertType.WARNING);
         } catch (Exception e) {
             showPopup("Eliminar medico estatus", "Error al eliminar el medico", Alert.AlertType.WARNING);
@@ -209,11 +169,11 @@ public class MedicoController implements Initializable {
 
     private void loadNuevoEditModal(String titulo, Boolean opcion) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/medico/FXMLMedicoAddEditModal.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/especialidad/FXMLEspecialidadAddEditModal.fxml"));
             Parent root = (Parent) fxmlLoader.load();
             if (opcion) {
-                MedicoAddEditController controller = fxmlLoader.getController();
-                controller.setPersonEdit(this, getMedicoSelecciondado());
+                EspecialidadAddEditController controller = fxmlLoader.getController();
+                controller.setPersonEdit(this, getEspecialidadSelecciondado());
             }
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
@@ -228,8 +188,8 @@ public class MedicoController implements Initializable {
         refrescar();
     }
 
-    private Medico getMedicoSelecciondado() {
-        return tblMedicos.getSelectionModel().getSelectedItem();
+    private EspecialidadMedica getEspecialidadSelecciondado() {
+        return tblEspecialidades.getSelectionModel().getSelectedItem();
 
     }
 
@@ -244,10 +204,10 @@ public class MedicoController implements Initializable {
             refrescar();
         } else {
             try {
-                Medico medicoTemp = medicoService.
+                EspecialidadMedica medicoTemp = especialidadService.
                         findById(Long.parseLong(txtSearch.getText()));
                 if (medicoTemp != null) {
-                    medicoDatos.setAll(medicoService.
+                    especialidadDatos.setAll(especialidadService.
                             findById(Long.parseLong(txtSearch.getText())));
                 } else {
                     showPopup("Mensaje busqueda medico", "Medico no encontrado",
@@ -259,12 +219,5 @@ public class MedicoController implements Initializable {
             }
         }
 
-    }
-
-    private void limpiarCampos() {
-        txtId.setText("");
-        txtNombre.setText("");
-        txtApellido.setText("");
-        txtTelefono.setText("");
     }
 }

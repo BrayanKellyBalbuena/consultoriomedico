@@ -12,7 +12,9 @@ public abstract class Catalogo implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
+    protected String nombre;
     protected String descripcion;
+
 
     public Long getId() {
         return id;
@@ -20,6 +22,14 @@ public abstract class Catalogo implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getDescripcion() {

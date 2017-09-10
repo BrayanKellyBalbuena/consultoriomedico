@@ -1,12 +1,14 @@
 package edu.itla.consultoriomedico.business.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name = "especialidad_medica")
 public class EspecialidadMedica extends Catalogo {
 
     @Transient

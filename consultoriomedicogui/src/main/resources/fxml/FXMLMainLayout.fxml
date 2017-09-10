@@ -18,6 +18,7 @@
             <items>
               <MenuItem mnemonicParsing="false" onAction="#mostrarPacienteView" text="Pacientes" />
                   <MenuItem mnemonicParsing="false" onAction="#mostrarMedicoView" text="Medicos" />
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarEspecialidad" text="Especialidades Medicas" />
                   <MenuItem mnemonicParsing="false" onAction="#mostrarCitasView" text="Citas" />
                   <MenuItem mnemonicParsing="false" onAction="#mostrarProcedimientoView" text="Procedimientos" />
             </items>

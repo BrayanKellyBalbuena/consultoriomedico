@@ -1,25 +1,22 @@
 package edu.itla.consultoriomedico.gui.controllers.medico;
 
-import com.jfoenix.controls.JFXTextArea;
+import com.jfoenix.controls.*;
 import edu.itla.consultoriomedico.business.entity.Medico;
 import edu.itla.consultoriomedico.business.enums.ServiceEnum;
 import edu.itla.consultoriomedico.business.services.MedicoService;
 import edu.itla.consultoriomedico.business.services.impl.MedicoServiceImpl;
-import edu.itla.consultoriomedico.gui.controllers.MedicoController;
 import edu.itla.consultoriomedico.gui.util.MessageDialog;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXDatePicker;
-import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import org.omg.CORBA.PRIVATE_MEMBER;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -47,11 +44,16 @@ public class MedicoAddEditController implements Initializable {
     private JFXDatePicker dtpFechaNac;
 
     @FXML
+    private JFXComboBox<String> cbEspecialidad;
+
+    @FXML
     private JFXTextField txtid;
 
 
     @FXML
     private JFXTextArea txtDireccion;
+
+    ObservableList<String> s;
 
     @FXML
     private JFXButton btnGuadar;
@@ -64,6 +66,9 @@ public class MedicoAddEditController implements Initializable {
         context = new ClassPathXmlApplicationContext("/spring/applicationContext.xml");
         service = (MedicoServiceImpl)
                 context.getBean(ServiceEnum.MEDICO_SERVICE.getValue());
+        s = FXCollections.observableArrayList(service.findAll().stream()
+                .map(m  -> m.getId() + "- "+ m.getNombre()).collect(Collectors.toList()));
+        cbEspecialidad.setItems(s);
     }
 
     public void setPersonEdit(MedicoController controller, Medico medico) {

@@ -4,6 +4,7 @@ import edu.itla.consultoriomedico.business.entity.Medico;
 import edu.itla.consultoriomedico.business.repository.MedicoRepository;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Repository;
 
 
 import java.sql.ResultSet;
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+@Repository
 public class MedicoRepositoryImpl implements MedicoRepository {
 
     private Logger LOG = Logger.getLogger(MedicoRepositoryImpl.class.getName());

@@ -24,7 +24,7 @@ public class MainLayoutController implements Initializable {
 
     public void mostrarPacienteView(ActionEvent evt) {
         try {
-            Parent pacienteScene = FXMLLoader.load(getClass().getResource("/fxml/FXMLPacienteView.fxml"));
+            Parent pacienteScene = FXMLLoader.load(getClass().getResource("/fxml/paciente/FXMLPacienteView.fxml"));
             mainLayout.setCenter(pacienteScene);
         } catch (IOException e) {
             e.printStackTrace();
@@ -33,7 +33,16 @@ public class MainLayoutController implements Initializable {
 
     public void mostrarMedicoView(ActionEvent evt) {
         try {
-            Parent medicoView = FXMLLoader.load(getClass().getResource("/fxml/FXMLMedicoView.fxml"));
+            Parent medicoView = FXMLLoader.load(getClass().getResource("/fxml/medico/FXMLMedicoView.fxml"));
+            mainLayout.setCenter(medicoView);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void mostrarEspecialidad (ActionEvent evt) {
+        try {
+            Parent medicoView = FXMLLoader.load(getClass().getResource("/fxml/especialidad/FXMLEspecialidadView.fxml"));
             mainLayout.setCenter(medicoView);
         } catch (IOException e) {
             e.printStackTrace();
@@ -42,7 +51,7 @@ public class MainLayoutController implements Initializable {
 
     public void mostrarProcedimientoView(ActionEvent evt) {
         try {
-          Parent  procedimientoView = FXMLLoader.load(getClass().getResource("/fxml/FXMLProcedimientoMedico.fxml"));
+          Parent  procedimientoView = FXMLLoader.load(getClass().getResource("/fxml/procedimiento/FXMLProcedimientoMedico.fxml"));
           mainLayout.setCenter(procedimientoView);
         } catch (IOException e) {
             e.printStackTrace();
@@ -52,7 +61,7 @@ public class MainLayoutController implements Initializable {
 
     public void mostrarCitasView(ActionEvent evt) {
         try {
-            Parent citaView = FXMLLoader.load(getClass().getResource("/fxml/FXMLCitaView.fxml"));
+            Parent citaView = FXMLLoader.load(getClass().getResource("/fxml/cita/FXMLCitaView.fxml"));
             mainLayout.setCenter(citaView);
         } catch (IOException e) {
             e.printStackTrace();

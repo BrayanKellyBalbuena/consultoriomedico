@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXDatePicker?>
 <?import com.jfoenix.controls.JFXTextArea?>
 <?import com.jfoenix.controls.JFXTextField?>
@@ -14,7 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane maxHeight="394.0" maxWidth="501.0" minHeight="377.0" minWidth="501.0" prefHeight="394.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.itla.consultoriomedico.gui.controllers.medico.MedicoAddEditController">
+<AnchorPane maxHeight="394.0" maxWidth="501.0" minHeight="377.0" minWidth="501.0" prefHeight="394.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.itla.consultoriomedico.gui.controllers.paciente.PacienteAddController">
     <children>
         <GridPane layoutX="26.0" layoutY="77.0" prefHeight="215.0" prefWidth="449.0">
             <columnConstraints>
@@ -48,15 +47,14 @@
         </GridPane>
         <HBox layoutX="247.0" layoutY="349.0" spacing="2.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="28.0">
             <children>
-                <JFXButton fx:id="btnGuadar" buttonType="RAISED" onAction="#guardar" prefHeight="27.0" prefWidth="112.0" ripplerFill="#0a5ca8" text="Guardar" />
-                <JFXButton fx:id="btnCancelar" buttonType="RAISED" onAction="#cancelar" prefHeight="23.0" prefWidth="98.0" ripplerFill="#d30f2f" text="Cancelar" />
+                <JFXButton fx:id="btnGuadar" buttonType="RAISED" onAction="#guarda" prefHeight="27.0" prefWidth="112.0" ripplerFill="#05903f" text="Guardar" />
+                <JFXButton fx:id="btnCancelar" buttonType="RAISED" onAction="#cancelar" prefHeight="23.0" prefWidth="98.0" ripplerFill="#bf070d" text="Cancelar" />
             </children>
         </HBox>
-        <Pane opacity="0.78" prefHeight="60.0" prefWidth="501.0" style="-fx-background-color: blue;">
+        <Pane layoutY="-4.0" opacity="0.74" prefHeight="66.0" prefWidth="501.0" style="-fx-background-color: blue;">
             <children>
-                <FontAwesomeIconView fill="WHITE" glyphName="USER_MD" layoutX="231.0" layoutY="47.0" size="50" />
+                <FontAwesomeIconView fill="#ececee" glyphName="USERS" layoutX="224.0" layoutY="57.0" size="50" />
             </children>
         </Pane>
-      <JFXComboBox fx:id="cbEspecialidad" layoutX="179.0" layoutY="315.0" prefHeight="25.0" prefWidth="293.0" promptText="Seleccione una Especialidad" />
     </children>
 </AnchorPane>
